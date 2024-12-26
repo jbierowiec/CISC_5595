@@ -1,1 +1,1 @@
-# CISC_5595
+# CISC 5595 Operating Systems Project
