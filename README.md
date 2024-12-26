@@ -13,6 +13,14 @@ This program implements a round-robin scheduler in C. It demonstrates creating a
 4. **Verbose Mode**: An optional mode for detailed logs of process states and transitions.
 5. **Dynamic Queue Implementation**: Uses a robust circular queue for managing processes.
 
+## Project Structure
+
+```plaintext
+├── queue.c
+├── queue.h
+└── scheduler.c
+```
+
 ## Enhancements
 
 1. **Queue Enhancements**:
@@ -32,7 +40,6 @@ This program implements a round-robin scheduler in C. It demonstrates creating a
 2. **Child Processes**: Each child waits for a `SIGCONT` signal to start/resume execution.
 3. **Execution Control**: Processes pause/resume based on the quantum, managed by the parent process.
 4. **Metrics**: Records and displays average response and turnaround times for all processes.
-
 
 ## How to Compile and Run
 1. Compile the code using `gcc`:
