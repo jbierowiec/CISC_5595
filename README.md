@@ -1,4 +1,4 @@
-#CISC 5595 Operating Systems Final Project (Round Robin Process Scheduler)
+# CISC 5595 Operating Systems Final Project (Round Robin Process Scheduler)
 
 
 This program implements a round-robin scheduler in C. It demonstrates creating and managing child processes using the RR algorithm, where the user inputs a fixed quantum of time for processes to run before being paused and resuming another process.
