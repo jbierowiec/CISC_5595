@@ -1,8 +1,8 @@
 # CISC 5595 Operating Systems Project (Round Robin Process Scheduler)
 
-
 This program implements a round-robin scheduler in C. It demonstrates creating and managing child processes using the RR algorithm, where the user inputs a fixed quantum of time for processes to run before being paused and resuming another process.
 
+This project was worked on by both me and [Thomas Noone](https://github.com/tnoone125). 
 
 ## Features
 1. **Process Creation**: Creates child processes and manages their execution lifecycle.
@@ -36,12 +36,14 @@ This program implements a round-robin scheduler in C. It demonstrates creating a
    - Prevents timing inaccuracies by initializing timing arrays to zero.
 
 ## How it Works
+
 1. **Parent Process**: Creates a number of child processes using `fork()` and enqueues them.
 2. **Child Processes**: Each child waits for a `SIGCONT` signal to start/resume execution.
 3. **Execution Control**: Processes pause/resume based on the quantum, managed by the parent process.
 4. **Metrics**: Records and displays average response and turnaround times for all processes.
 
 ## How to Compile and Run
+
 1. Compile the code using `gcc`:
   ```bash
   gcc scheduler.c queue.c -o scheduler
@@ -60,6 +62,7 @@ This program implements a round-robin scheduler in C. It demonstrates creating a
   ```
 
 ## Additional Notes
+
 1. Maximum number of processes: 1000 (configurable in the code).
 2. Quantum time should be provided in milliseconds.
 3. Verbose mode enables detailed process-level logs, such as process creation, signals received, and metrics.
